@@ -1,10 +1,15 @@
-import React from 'react';
-import Button from '../../../ui/button/Button';
+import React, { FC } from 'react';
+import Button, { ButtonVariant } from '../../../ui/button/Button';
+import '../../../App.scss';
 
-const Home = () => {
+const Home:FC = () => {
   return <div>
-      Home
-      <Button>Press Me</Button>
+      <h1>Home</h1>
+      <Button onClick={() => {console.log('Home clicked')}}>Press Me</Button>
+      <br />
+      <Button onClick={() => {console.log('Home clicked')}} variant={ButtonVariant.emerald}>Добавить в друзья</Button>
+      <br />
+      <Button onClick={() => {console.log('Home clicked')}} variant={ButtonVariant.amaranth}>Добавить в друзья</Button>
       </div>;
 };
 

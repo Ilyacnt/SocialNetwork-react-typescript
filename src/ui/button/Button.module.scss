@@ -1,3 +1,60 @@
-.button {
-    color: red;
+@mixin button {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    line-height: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+// Default Button
+.default {
+    @include button;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0.5px solid #1958EA;
+}
+.default:hover {
+    color: #E8DCE1;
+    background-color: #1958EA;
+}
+.default:active {
+    color: #E8DCE1;
+    background-color: #123da1;
+}
+// Emerald Button
+.emerald {
+    @include button;
+    color: #321A53;
+    background-color: #3BCB61;
+    border: 0.5px solid #3BCB61;
+}
+.emerald:hover {
+    color: #3BCB61;
+    background-color: #321A53;
+    border: 0.5px solid #321A53;
+}
+.emerald:active {
+    background-color: #1c0e2e;
+}
+// Amaranth Button
+.amaranth {
+    @include button;
+    color: #4E3642;
+    background-color: #E33F55;
+    border: 0.5px solid #E33F55;
+}
+.amaranth:hover {
+    color: #E33F55;
+    background-color: #4E3642;
+    border: 0.5px solid #4E3642;
+}
+.amaranth:active {
+    background-color: #20161b;
 }
