@@ -1,6 +1,80 @@
 @import './styles/reset';
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
+$typography_color_light: #353535;
+
+*:focus-visible {
+    outline: 3px solid deepskyblue;
+    
+}
+
 body {
     font-family: 'Rubik', sans-serif;
+    color: $typography_color_light;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    /* Block Blur and Shadow */
+    box-shadow: 0px 2px 1px rgba(40, 0, 60, 0.2);
+    backdrop-filter: blur(20px);
+
+    .logo {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    .header-wrap {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-first-flex {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-second-flex {
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 230px;
+    height: 32px;
+    background: #FFFFFF;
+    /* Button Shadow */
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    .search-bar-svg{
+        position: absolute;
+        margin: 0 10px;
+        width: 18px;
+        height: 18px;
+    }
+    .search-bar-input {
+        font-size: 1em;
+        border: none;
+        width: inherit;
+        height: inherit;
+        padding-left: 38px;
+        padding-right: 10px;
+        border-radius: inherit;
+
+        &:focus {
+            outline: none;
+        }
+        &:focus-visible {
+            outline:  3px solid deepskyblue;
+        }
+    }
 }

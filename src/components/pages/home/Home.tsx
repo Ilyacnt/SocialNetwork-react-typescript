@@ -5,7 +5,7 @@ import '../../../App.scss';
 const Home:FC = () => {
   return <div>
       <h1>Home</h1>
-      <Button onClick={() => {console.log('Home clicked')}}>Press Me</Button>
+      <Button onClick={() => {console.log('Home clicked')}}>Добавить в друзья</Button>
       <br />
       <Button onClick={() => {console.log('Home clicked')}} variant={ButtonVariant.emerald}>Добавить в друзья</Button>
       <br />

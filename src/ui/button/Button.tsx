@@ -17,16 +17,16 @@ interface ButtonProps {
 const Button:FC<ButtonProps> = ({children, onClick, variant}) => {
   const defineVariant = (variant: ButtonVariant | undefined): string => {
     if(variant === ButtonVariant.emerald) {
-      return classes.emerald
+      return classes.button + ' ' + classes.emerald
     }
     if(variant === ButtonVariant.amaranth) {
-      return classes.amaranth
+      return classes.button + ' ' + classes.amaranth
     }
     if(variant === ButtonVariant.default) {
-      return classes.default
+      return classes.button + ' ' + classes.default
     }
     else {
-      return classes.default
+      return classes.button + ' ' + classes.default
     }
   }
 
