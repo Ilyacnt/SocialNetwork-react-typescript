@@ -1,0 +1,56 @@
+.player {
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+    /* Likely future */
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 300px;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.playback {
+    padding: 9px 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.play {
+    margin: 0 10px;
+    padding: 9px 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.playforward {
+    padding: 9px 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.songname {
+    width: 100px;
+    margin-right: 10px;
+    text-overflow: ellipsis " [..]";
+}

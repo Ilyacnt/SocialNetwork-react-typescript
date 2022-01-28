@@ -4,7 +4,7 @@ import { ReactComponent as SearchIcon } from '../../../images/svg/searchOutline.
 
 
 const SearchBar: FC = () => {
-    return <div className='search-bar'>
+    return <div className='search-bar' >
         <SearchIcon className='search-bar-svg' />
         <input type="search" className='search-bar-input' placeholder="Поиск" />
     </div>;

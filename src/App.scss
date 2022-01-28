@@ -11,6 +11,7 @@ $typography_color_light: #353535;
 body {
     font-family: 'Rubik', sans-serif;
     color: $typography_color_light;
+    background: rgb(206, 146, 255);
 }
 
 
@@ -72,9 +73,6 @@ body {
 
         &:focus {
             outline: none;
-        }
-        &:focus-visible {
-            outline:  3px solid deepskyblue;
         }
     }
 }
