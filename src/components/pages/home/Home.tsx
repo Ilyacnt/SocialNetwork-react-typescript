@@ -3,7 +3,7 @@ import Button, { ButtonVariant } from '../../../ui/button/Button';
 import '../../../App.scss';
 
 const Home:FC = () => {
-  return <div>
+  return <div className="home">
       <h1>Home</h1>
       <Button onClick={() => {console.log('Home clicked')}}>Добавить в друзья</Button>
       <br />

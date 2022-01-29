@@ -3,6 +3,7 @@ import SearchBar from './SearchBar'
 import '../../../App.scss'
 import Nontification from './Nontification/Nontification';
 import Mediaplayer from './Mediaplayer/Mediaplayer';
+import ProfileDropdown from './ProfileDropdown/ProfileDropdown';
 
 const Header: FC = () => {
   return <div className="header">
@@ -14,7 +15,7 @@ const Header: FC = () => {
         <Mediaplayer />
       </div>
       <div className="header-second-flex">
-        Flex second
+        <ProfileDropdown/>
       </div>
 
     </div>
